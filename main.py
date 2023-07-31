@@ -180,7 +180,10 @@ def main():
                 with st.expander('Closing Remarks'):
                     st.audio(response_audio_bytes, format='audio/wav')
                     st.write(ai_response)
-                delete_files("./voices/")
+                
+                delete_files("./voices/", files_to_keep=['voices.md'])
+                logger.info("Deleted all files in voices folder, except voices.md")
+
         except Exception as e:
             logger.error(f'Error: {e}')
             pass
