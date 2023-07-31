@@ -180,7 +180,7 @@ def main():
                 with st.expander('Closing Remarks'):
                     st.audio(response_audio_bytes, format='audio/wav')
                     st.write(ai_response)
-                # delete_files("./voices/")
+                delete_files("./voices/")
         except Exception as e:
             logger.error(f'Error: {e}')
             pass
