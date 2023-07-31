@@ -1,0 +1,12 @@
+streamlit==1.25.0
+openai==0.27.8
+SpeechRecognition==3.10.0
+soundfile==0.12.1
+requests==2.31.0
+elevenlabs==0.2.21
+python-dotenv==1.0.0
+whisper==1.1.10
+# brew install portaudio - before PyAudio
+PyAudio==0.2.13
+# brew insatll mpv
+audio-recorder-streamlit==0.0.8
