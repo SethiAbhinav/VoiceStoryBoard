@@ -1,0 +1,440 @@
+{
+    "Rachel": {
+        "id": "21m00Tcm4TlvDq8ikWAM",
+        "labels": {
+            "accent": "american",
+            "description": "calm",
+            "age": "young",
+            "gender": "female",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/21m00Tcm4TlvDq8ikWAM/6edb9076-c3e4-420c-b6ab-11d43fe341c8.mp3"
+    },
+    "Clyde": {
+        "id": "2EiwWnXFnvU5JabPnv8n",
+        "labels": {
+            "accent": "american",
+            "description": "war veteran",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/2EiwWnXFnvU5JabPnv8n/3546a564-4d2b-4cb5-85a2-d02c015ffb9a.mp3"
+    },
+    "Domi": {
+        "id": "AZnzlk1XvdvUeBnXmlld",
+        "labels": {
+            "accent": "american",
+            "description": "strong",
+            "age": "young",
+            "gender": "female",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/AZnzlk1XvdvUeBnXmlld/69c5373f-0dc2-4efd-9232-a0140182c0a9.mp3"
+    },
+    "Dave": {
+        "id": "CYw3kZ02Hs0563khs1Fj",
+        "labels": {
+            "accent": "british-essex",
+            "description": "conversational",
+            "age": "young",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/CYw3kZ02Hs0563khs1Fj/83fc62c7-6785-4b7d-b5e4-40464154f65c.mp3"
+    },
+    "Fin": {
+        "id": "D38z5RcWu1voky8WS1ja",
+        "labels": {
+            "accent": "irish",
+            "description": "sailor",
+            "age": "old",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/D38z5RcWu1voky8WS1ja/6018264b-5e70-457f-ba5d-b22223912c54.mp3"
+    },
+    "Bella": {
+        "id": "EXAVITQu4vr4xnSDxMaL",
+        "labels": {
+            "accent": "american",
+            "description": "soft",
+            "age": "young",
+            "gender": "female",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/EXAVITQu4vr4xnSDxMaL/04365bce-98cc-4e99-9f10-56b60680cda9.mp3"
+    },
+    "Antoni": {
+        "id": "ErXwobaYiN019PkySvjV",
+        "labels": {
+            "accent": "american",
+            "description": "well-rounded",
+            "age": "young",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/ErXwobaYiN019PkySvjV/38d8f8f0-1122-4333-b323-0b87478d506a.mp3"
+    },
+    "Thomas": {
+        "id": "GBv7mTt0atIp3Br8iCZE",
+        "labels": {
+            "accent": "american",
+            "description": "calm",
+            "age": "young",
+            "gender": "male",
+            "use case": "meditation"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/GBv7mTt0atIp3Br8iCZE/c7c04cd4-4889-48f2-b2b6-1c77fac36242.mp3"
+    },
+    "Charlie": {
+        "id": "IKne3meq5aSn9XLyUdCD",
+        "labels": {
+            "accent": "australian",
+            "description": "casual",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "conversational"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/IKne3meq5aSn9XLyUdCD/d04d8a5a-2351-45b0-a857-c6602939648d.mp3"
+    },
+    "Emily": {
+        "id": "LcfcDJNUP1GQjkzn1xUU",
+        "labels": {
+            "accent": "american",
+            "description": "calm",
+            "age": "young",
+            "gender": "female",
+            "use case": "meditation"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/LcfcDJNUP1GQjkzn1xUU/770a4bbf-6d72-4d99-87f3-e7bb2c9e77ec.mp3"
+    },
+    "Elli": {
+        "id": "MF3mGyEYCl7XYWbV9V6O",
+        "labels": {
+            "accent": "american",
+            "description": "emotional",
+            "age": "young",
+            "gender": "female",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/MF3mGyEYCl7XYWbV9V6O/f9fd64c3-5d62-45cd-b0dc-ad722ee3284e.mp3"
+    },
+    "Callum": {
+        "id": "N2lVS1w4EtoT3dr4eOWO",
+        "labels": {
+            "accent": "american",
+            "description": "hoarse",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/N2lVS1w4EtoT3dr4eOWO/d26c3230-027b-4abe-8e6d-6f82252145f3.mp3"
+    },
+    "Patrick": {
+        "id": "ODq5zmih8GrVes37Dizd",
+        "labels": {
+            "accent": "american",
+            "description": "shouty",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/ODq5zmih8GrVes37Dizd/bccae5c9-8968-450f-85cc-f0ad5bea9592.mp3"
+    },
+    "Harry ": {
+        "id": "SOYHLrjzK2X1ezoPC6cr",
+        "labels": {
+            "accent": "american",
+            "description": "anxious",
+            "age": "young",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/SOYHLrjzK2X1ezoPC6cr/ec39d906-1da9-48e6-865b-cfa101d38592.mp3"
+    },
+    "Liam": {
+        "id": "TX3LPaxmHKxFdv7VOQHJ",
+        "labels": {
+            "accent": "american",
+            "age": "young",
+            "gender": "male",
+            "use case": "narration",
+            "description ": "neutral"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/TX3LPaxmHKxFdv7VOQHJ/0a31b1ee-c075-4a60-afea-7542414f73f4.mp3"
+    },
+    "Dorothy": {
+        "id": "ThT5KcBeYPX3keUQqHPh",
+        "labels": {
+            "accent": "british",
+            "description": "pleasant",
+            "age": "young",
+            "gender": "female",
+            "use case": "children's stories"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/ThT5KcBeYPX3keUQqHPh/3d906a8f-444b-4f64-ac81-9fbb2df00aa6.mp3"
+    },
+    "Josh": {
+        "id": "TxGEqnHWrfWFTfGW9XjX",
+        "labels": {
+            "accent": "american",
+            "description": "deep",
+            "age": "young",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/TxGEqnHWrfWFTfGW9XjX/c6c80dcd-5fe5-4a4c-a74c-b3fec4c62c67.mp3"
+    },
+    "Arnold": {
+        "id": "VR6AewLTigWG4xSOukaG",
+        "labels": {
+            "accent": "american",
+            "description": "crisp",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/VR6AewLTigWG4xSOukaG/66e83dc2-6543-4897-9283-e028ac5ae4aa.mp3"
+    },
+    "Charlotte": {
+        "id": "XB0fDUnXU5powFXDhCwa",
+        "labels": {
+            "accent": "english-swedish",
+            "description": "seductive",
+            "age": "middle aged",
+            "gender": "female",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/XB0fDUnXU5powFXDhCwa/a9d88a90-0dd7-4b93-a352-8e3f88324bed.mp3"
+    },
+    "Matilda ": {
+        "id": "XrExE9yKIg1WjnnlVkGX",
+        "labels": {
+            "accent": "american",
+            "description": "warm",
+            "age": "young",
+            "gender": "female",
+            "use case": "audiobook"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/XrExE9yKIg1WjnnlVkGX/94667a92-95e1-444c-99b3-9986c7bb8cc0.mp3"
+    },
+    "Matthew": {
+        "id": "Yko7PKHZNXotIFUBG7I9",
+        "labels": {
+            "accent": "british",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "audiobook",
+            "description ": "calm"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/Yko7PKHZNXotIFUBG7I9/23cce199-6ac5-4f5a-bef4-f3dc7b9f2f20.mp3"
+    },
+    "James": {
+        "id": "ZQe5CZNOzWyzPSCn5a3c",
+        "labels": {
+            "accent": "australian",
+            "description": "calm ",
+            "age": "old",
+            "gender": "male",
+            "use case": "news"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/ZQe5CZNOzWyzPSCn5a3c/c3e66e3c-5869-4a49-8a5d-e109df630f9c.mp3"
+    },
+    "Joseph": {
+        "id": "Zlb1dXrM653N07WRdFW3",
+        "labels": {
+            "accent": "british",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "news",
+            "description ": "ground reporter "
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/Zlb1dXrM653N07WRdFW3/43a04e0e-ece9-4334-81ce-781be8302f03.mp3"
+    },
+    "Jeremy": {
+        "id": "bVMeCyTHy58xNoL34h3p",
+        "labels": {
+            "accent": "american-irish",
+            "description": "excited",
+            "age": "young",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/bVMeCyTHy58xNoL34h3p/9b6c72cf-e8c9-4784-8c4c-7bdb4a5bc20c.mp3"
+    },
+    "Michael ": {
+        "id": "flq6f7yk4E4fJM5XTYuZ",
+        "labels": {
+            "accent": "american",
+            "age": "old",
+            "gender": "male",
+            "use case": "audiobook",
+            "description ": "orotund"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/flq6f7yk4E4fJM5XTYuZ/559b3fab-afa8-4535-ad18-1362ea23ea90.mp3"
+    },
+    "Ethan": {
+        "id": "g5CIjZEefAph4nQFvHAz",
+        "labels": {
+            "accent": "american",
+            "age": "young",
+            "gender": "male",
+            "use case": "ASMR",
+            "description ": "whisper"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/g5CIjZEefAph4nQFvHAz/94d1d365-a0ab-43e2-9836-148d063e2483.mp3"
+    },
+    "Gigi": {
+        "id": "jBpfuIE2acCO8z3wKNLl",
+        "labels": {
+            "accent": "american",
+            "description": "childlish",
+            "age": "young",
+            "gender": "female",
+            "use case": "animation"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/jBpfuIE2acCO8z3wKNLl/7619f4f5-25fc-4cd7-858e-26a6636b77cc.mp3"
+    },
+    "Freya": {
+        "id": "jsCqWAovK2LkecY7zXl4",
+        "labels": {
+            "accent": "american",
+            "age": "young",
+            "gender": "female",
+            "description ": "overhyped",
+            "usecase": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/jsCqWAovK2LkecY7zXl4/854b9cd2-fd10-4300-abd7-20be0ad7265c.mp3"
+    },
+    "Grace": {
+        "id": "oWAxZDx7w5VEj9dCyTzz",
+        "labels": {
+            "accent": "american-southern",
+            "age": "young",
+            "gender": "female",
+            "use case": "audiobook ",
+            "description ": "gentle"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/oWAxZDx7w5VEj9dCyTzz/91ba4ba4-9c63-4342-9ce9-e1de75db35b8.mp3"
+    },
+    "Daniel": {
+        "id": "onwK4e9ZLuTAKqWW03F9",
+        "labels": {
+            "accent": "british",
+            "description": "deep",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "news presenter"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/onwK4e9ZLuTAKqWW03F9/8dd0cfac-817c-467f-bcf0-4d8ab7745358.mp3"
+    },
+    "Serena": {
+        "id": "pMsXgVXv3BLzUgSXRplE",
+        "labels": {
+            "accent": "american",
+            "description": "pleasant",
+            "age": "middle aged",
+            "gender": "female",
+            "use case": "interactive"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pMsXgVXv3BLzUgSXRplE/1af444bb-89e6-42e6-bd64-9d16ba01897c.mp3"
+    },
+    "Adam": {
+        "id": "pNInz6obpgDQGcFmaJgB",
+        "labels": {
+            "accent": "american",
+            "description": "deep",
+            "age": "middle aged",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pNInz6obpgDQGcFmaJgB/e0b45450-78db-49b9-aaa4-d5358a6871bd.mp3"
+    },
+    "Nicole": {
+        "id": "piTKgcLEGmPE4e6mEKli",
+        "labels": {
+            "accent": "american",
+            "description": "whisper",
+            "age": "young",
+            "gender": "female",
+            "use case": "audiobook"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/piTKgcLEGmPE4e6mEKli/b6acec29-70de-480f-8a51-75faaadc64de.mp3"
+    },
+    "Jessie": {
+        "id": "t0jbNlBVZ17f02VDIeMI",
+        "labels": {
+            "accent": "american",
+            "description": "raspy ",
+            "age": "old",
+            "gender": "male",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/t0jbNlBVZ17f02VDIeMI/4c864097-26ce-45e2-a946-e27e901b1ad8.mp3"
+    },
+    "Ryan ": {
+        "id": "wViXBPUzp2ZZixB1xQuM",
+        "labels": {
+            "age": "middle aged",
+            "description": "soldier",
+            "gender": "male",
+            "use case": "audiobook",
+            "accent ": "american"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/wViXBPUzp2ZZixB1xQuM/69d5a511-df87-44d8-8f48-3bec68dd36c2.mp3"
+    },
+    "Sam": {
+        "id": "yoZ06aMxZJJ28mfd3POQ",
+        "labels": {
+            "accent": "american",
+            "description": "raspy",
+            "age": "young",
+            "gender": "male",
+            "use case": "narration"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/yoZ06aMxZJJ28mfd3POQ/1c4d417c-ba80-4de8-874a-a1c57987ea63.mp3"
+    },
+    "Glinda": {
+        "id": "z9fAnlkpzviPz146aGWa",
+        "labels": {
+            "accent": "american",
+            "description": "witch",
+            "age": "middle aged",
+            "gender": "female",
+            "use case": "video games"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/z9fAnlkpzviPz146aGWa/3693e33f-ca60-4a25-8f36-f15cdc9c9d77.mp3"
+    },
+    "Giovanni": {
+        "id": "zcAOhNBS3c14rBihAFp1",
+        "labels": {
+            "accent": "english-italian",
+            "description": "foreigner",
+            "age": "young",
+            "gender": "male",
+            "use case": "audiobook"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/zcAOhNBS3c14rBihAFp1/845e87f6-0719-4d02-87db-e1e3a72c3373.mp3"
+    },
+    "Mimi ": {
+        "id": "zrHiDhphv9ZnVXBqCLjz",
+        "labels": {
+            "accent": "english-swedish",
+            "description": "childish",
+            "age": "young",
+            "gender": "female",
+            "use case": "animation"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/premade/voices/zrHiDhphv9ZnVXBqCLjz/1166295d-94b6-4a69-9e5d-af3a2293395b.mp3"
+    },
+    "Wayne - cool, calm, deep": {
+        "id": "x73c5zf48Vm6qRD8wtaK",
+        "labels": {
+            "accent": "american",
+            "age": "old",
+            "gender": "male"
+        },
+        "preview_url": "https://storage.googleapis.com/eleven-public-prod/63YWf9FcbyS5PpTayiUUxnQ95Cj2/voices/rDNcGVsu7qThbTrXT5RG/3a7c7a03-ebc2-4c28-aa0a-8e57575d6554.mp3"
+    }
+}
