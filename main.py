@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit.logger import get_logger
 from story_processing import extract_story, extract_dialogues, is_dialogue_format
 from voice_handling import play_dialogues
 from asr import whisper_asr
@@ -13,6 +14,7 @@ import base64
 import openai
 
 load_dotenv()
+logger = get_logger(__name__)
 
 # Put your API key in a separate configuration file or environment variable
 set_api_key(os.getenv("ELEVEN_API_KEY"))
@@ -153,19 +155,23 @@ def main():
             if audio_bytes:
                 with open('voices/user_response.wav', 'wb') as audio_file:
                     audio_file.write(audio_bytes)
-                st.write(" LOG : User response recorded ")
+                logger.info(" LOG : User response recorded ")
                 
             if os.path.exists('./voices/user_response.wav'):
-                st.write(" LOG : User response recorded and exists ")
+                logger.info(" LOG : User response recorded and exists ")
                 user_response_text = whisper_asr()
                 ai_response = generate_ai_response(user_response_text, openai_api_key)
                 response_audio_path = './voices/ai_response.wav'
                 response_audio = generate(voice = 'Bella', text = ai_response)
 
                 save(response_audio, response_audio_path)
+                logger.info("Saved response ai bella")
                 response_audio_file = open(response_audio_path, 'rb')
+                
+                logger.info("opened audio response of ai bella")
                 response_audio_bytes = response_audio_file.read()
 
+                logger.info("st expander before")
                 with st.expander('Closing Remarks'):
                     st.audio(response_audio_bytes, format='audio/wav')
                     st.write(ai_response)
