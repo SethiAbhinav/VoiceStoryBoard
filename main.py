@@ -1,10 +1,11 @@
 import streamlit as st
 from story_processing import extract_story, extract_dialogues, is_dialogue_format
 from voice_handling import play_dialogues
-from asr import get_user_voice_input, whisper_asr, generate_ai_response
+from asr import whisper_asr
 from dotenv import load_dotenv
 from elevenlabs import set_api_key, generate, play, save
 from audio_recorder_streamlit import audio_recorder
+from utils import generate_ai_response
 import os
 import json
 from time import sleep
@@ -14,6 +15,7 @@ load_dotenv()
 
 # Put your API key in a separate configuration file or environment variable
 set_api_key(os.getenv("ELEVEN_API_KEY"))
+user_response_text = ''
 
 def set_bg_hack(main_bg):
     '''
@@ -45,7 +47,7 @@ def set_bg_hack(main_bg):
          unsafe_allow_html=True
      )
 
-def delete_files(directory, files_to_keep):
+def delete_files(directory, files_to_keep = []):
             # List all files in the directory
             files = os.listdir(directory)
 
@@ -63,14 +65,12 @@ def delete_files(directory, files_to_keep):
 def main():
     set_bg_hack('assets/Background1.png')
     st.title('Magical Voiceover App')
-    print(1)
     if 'script' not in st.session_state:
         st.session_state.script = ''
 
     # Get the script from the user
     st.session_state.story_title = st.text_input("What is the title of the story?")
     st.session_state.script = st.text_area('Enter the script:', st.session_state.script)
-    print(2)
     # Show a button for the user to start the magic
     if st.button('Magical Voiceover Time'):
         progress_bar = st.progress(0)
@@ -104,7 +104,6 @@ def main():
         audio_files, character_voices = play_dialogues(story_metadata)
         # st.write(audio_files)
         progress_bar.progress(60)
-        print(3)
         st.title(st.session_state.story_title)
         for audio_file_path, role in zip(audio_files, story_metadata['Dialogues']):
             # print(role)
@@ -117,7 +116,6 @@ def main():
             except: 
                 st.markdown(story_metadata['Dialogues'][role])
             st.audio(audio_bytes, format='audio/wav')
-        print(4)
         st.write("**Generating follow-up question...**")
         sleep(2) # yes, it's just a sleep call. It shows potential to add another API call to generate relevant questions basis the content of the book.
         st.write('**Generation complete!**')
@@ -130,8 +128,6 @@ def main():
                         model = 'eleven_multilingual_v1')
         save(AI_QUESTION, './voices/ai_question.wav')  
 
-        print(5)
-
         with st.expander("Some things to Ponder upon..."):
             question_text = "\n Note: I request you to please keep your reply short. To begin, click the mic button below. It will take a while for the response to be generated."
             AI_QUESTION_file = open('./voices/ai_question.wav', 'rb')
@@ -140,10 +136,7 @@ def main():
             st.write(question_text)
         
         progress_bar.progress(100)
-        
-        print(6)
     try:
-        user_response_text = ''
 
         # Record or upload audio
         audio_bytes = audio_recorder(energy_threshold=(-1.0, 1.0), pause_threshold=10.0)
@@ -152,16 +145,14 @@ def main():
         if audio_bytes:
             with open('voices/user_response.wav', 'wb') as audio_file:
                 audio_file.write(audio_bytes)
-        print(7)
-        if os.path.exists('./voices/user_response.wav'):
-            print(8)
 
-            user_response_text = whisper_asr(audio_file_path)
+        if os.path.exists('./voices/user_response.wav'):
+            user_response_text = whisper_asr()
             print('asr passed')
             ai_response = generate_ai_response(user_response_text)
             response_audio_path = 'voices/ai_response.wav'
             response_audio = generate(voice = 'Bella', text = ai_response)
-            play(response_audio)
+            # play(response_audio)
             save(response_audio, response_audio_path)
             print('read passed')
             response_audio_file = open(response_audio_path, 'rb')
@@ -172,34 +163,13 @@ def main():
             # Directory where the files are located
             directory = "voices/"
             # Name of the file you want to keep
-            files_to_keep = ["ai_question.wav", "user_response.wav", "ai_response.wav"]
+            # files_to_keep = ["ai_question.wav", "user_response.wav", "ai_response.wav"]
             # Call the function to delete files
-            delete_files(directory, files_to_keep)
-        else:
-            print(9)
+            delete_files(directory)
 
-            user_response_text = whisper_asr('./voices/user_response.wav')
-            ai_response = generate_ai_response(user_response_text)
-            response_audio_path = 'voices/ai_response.wav'
-            response_audio = generate(voice = 'Bella', text = ai_response)
-            save(response_audio, response_audio_path)
-
-            response_audio_file = open(response_audio_path, 'rb')
-            response_audio_bytes = response_audio_file.read()
-            with st.expander('Closing Remarks'):
-                st.audio(response_audio_bytes, format='audio/wav')
-                st.write(ai_response)
-        
-            # Directory where the files are located
-            directory = "voices/"
-            # Name of the file you want to keep
-            files_to_keep = ["ai_question.wav", "user_response.wav", "ai_response.wav"]
-            # Call the function to delete files
-            delete_files(directory, files_to_keep)
-
-    except:
+    except Exception as e:
+        print(f'Error: {e}')
         pass
-    print(11)
 
 if __name__ == '__main__':
     main()

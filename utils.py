@@ -58,7 +58,14 @@ def format_output(story_metadata):
         if character in character_voices:
             continue
         character = character.strip()
-        voice_name = random.choice(voice_names)
+        f = 0
+        while f==0:
+            voice_name = random.choice(voice_names)
+            try:
+                audio = generate('Hi', voice = voice_name)
+                f = 1
+            except:
+                continue
         character_voices[character] = voice_name
         # Remove the chosen voice from the list so it won't be used for another character
         voice_names.remove(voice_name)
@@ -82,7 +89,7 @@ def format_output(story_metadata):
         print('Character:', character, '| Voice ID:', voice_id, '| Dialogue:', dialogue)
 
         # # Generate the voice
-        voice = stream(generate(dialogue, voice=voice_id, stream = True, latency = 3))
+        # voice = stream(generate(dialogue, voice=voice_id, stream = True, latency = 3)) # Could not pursue due to Streamlit issues with mpv.
         # st.write(f'{character}: {dialogue}')
         # play(voice)
     return character_voices
