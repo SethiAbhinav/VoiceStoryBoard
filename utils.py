@@ -86,7 +86,7 @@ def format_output(story_metadata):
         # Get the voice ID
         voice_id = voice_data[character_voices[character]]['id']
 
-        print('Character:', character, '| Voice ID:', voice_id, '| Dialogue:', dialogue)
+        # print('Character:', character, '| Voice ID:', voice_id, '| Dialogue:', dialogue)
 
         # # Generate the voice
         # voice = stream(generate(dialogue, voice=voice_id, stream = True, latency = 3)) # Could not pursue due to Streamlit issues with mpv.
@@ -108,7 +108,8 @@ def get_user_voice_input():
         # text = r.recognize_google(audio_data)
         return audio_data
 
-def generate_ai_response(transcribed_input):
+def generate_ai_response(transcribed_input, key):
+    openai.api_key = key
     assistant_message = {
         'role': 'assistant',
         'content': "What did you like about the story? What did you learn from it?"

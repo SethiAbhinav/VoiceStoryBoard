@@ -13,7 +13,7 @@ def get_character_dialogues():
         'Dialouges': Dialogues
     }
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.api_key = os.getenv("OPENAI_API_KEY")
 
 functions = [
     {
@@ -81,12 +81,12 @@ Narrator: demanded Mr.Braun.
 ```
 '''
 
-def extract_story(script):
+def extract_story(script, key):
     user_message = {
         'role': 'user',
         'content': PROMPT + "\n\nGive me the character and Dialogues. Here is your script: \n```\n" + script + "\n```"
     }
-
+    openai.api_key = key
     # Query the model
     response = openai.ChatCompletion.create(
         model = "gpt-4",

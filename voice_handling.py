@@ -1,6 +1,5 @@
 from elevenlabs import generate, play, set_api_key, stream, save
 from utils import format_output
-# from pydub import AudioSegment
 import json
 import os
 import streamlit as st
@@ -17,7 +16,7 @@ def play_dialogues(story_metadata):
         dialogues = story_metadata['Dialogues']
 
     audio_files = []
-    print(dialogues)
+    # print(dialogues)
     for idx, role in enumerate(dialogues):
         try:
             character = role['Character'].strip()
