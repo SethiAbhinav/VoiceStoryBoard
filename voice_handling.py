@@ -25,7 +25,7 @@ def play_dialogues(story_metadata):
             character = dialogues['Character']
             dialogue = dialogues['Dialogue']
 
-        voice_path = f'voices/voice_{idx}_{character}.wav'
+        voice_path = f'./voices/voice_{idx}_{character}.wav'
         voice = character_voices[character]
         audio = generate(text = dialogue, voice = voice)
         save(audio, voice_path)
