@@ -182,7 +182,7 @@ def main():
                     st.write(ai_response)
                 # delete_files("./voices/")
         except Exception as e:
-            print(f'Error: {e}')
+            logger.error(f'Error: {e}')
             pass
     else:
         st.sidebar.warning("Please enter OpenAI API Key to continue (This app works only with GPT4 api key as of now).")
