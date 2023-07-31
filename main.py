@@ -153,10 +153,10 @@ def main():
             if audio_bytes:
                 with open('voices/user_response.wav', 'wb') as audio_file:
                     audio_file.write(audio_bytes)
-                print(" LOG : User response recorded ")
+                st.write(" LOG : User response recorded ")
                 
             if os.path.exists('./voices/user_response.wav'):
-                print(" LOG : User response recorded and exists ")
+                st.write(" LOG : User response recorded and exists ")
                 user_response_text = whisper_asr()
                 ai_response = generate_ai_response(user_response_text, openai_api_key)
                 response_audio_path = './voices/ai_response.wav'
