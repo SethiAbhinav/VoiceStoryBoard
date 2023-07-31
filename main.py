@@ -62,8 +62,7 @@ def delete_files(directory, files_to_keep = []):
                     # This is not the file we want to keep, delete it
                     os.remove(file_path)
                     # print(f"Deleted: {file_path}")
-
-@st.cache_data(experimental_allow_widgets=True)
+                    
 def main():
     set_bg_hack('assets/Background1.png')
     st.sidebar.title("Configuration")
