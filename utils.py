@@ -19,7 +19,7 @@ def is_dialogue_format(script):
     # Check each line
     for line in lines:
         # If the line doesn't contain a colon, it's not in dialogue format
-        if ':' not in line:
+        if line and (':' not in line):
             return False
     
     # If all lines are in dialogue format, return True
