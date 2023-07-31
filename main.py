@@ -117,7 +117,8 @@ def main():
                 st.markdown(story_metadata['Dialogues'][role])
             st.audio(audio_bytes, format='audio/wav')
         st.write("**Generating follow-up question...**")
-        sleep(2) # yes, it's just a sleep call. It shows potential to add another API call to generate relevant questions basis the content of the book.
+        sleep(2) # yes, it's just a sleep call. 
+        # It shows potential to add another API call to generate relevant questions basis the content of the book.
         st.write('**Generation complete!**')
         if st.session_state.story_title :
             question = f"What did you like about the story? What did you learn from it? - You can start with your response when you like... Just click the button below. -- Hope you had a great time! Listening to the story titled -- {st.session_state.story_title}"
@@ -148,24 +149,18 @@ def main():
 
         if os.path.exists('./voices/user_response.wav'):
             user_response_text = whisper_asr()
-            print('asr passed')
             ai_response = generate_ai_response(user_response_text)
             response_audio_path = 'voices/ai_response.wav'
             response_audio = generate(voice = 'Bella', text = ai_response)
-            # play(response_audio)
+
             save(response_audio, response_audio_path)
-            print('read passed')
             response_audio_file = open(response_audio_path, 'rb')
             response_audio_bytes = response_audio_file.read()
+
             with st.expander('Closing Remarks'):
                 st.audio(response_audio_bytes, format='audio/wav')
                 st.write(ai_response)
-            # Directory where the files are located
-            directory = "voices/"
-            # Name of the file you want to keep
-            # files_to_keep = ["ai_question.wav", "user_response.wav", "ai_response.wav"]
-            # Call the function to delete files
-            delete_files(directory)
+            delete_files("voices/")
 
     except Exception as e:
         print(f'Error: {e}')
