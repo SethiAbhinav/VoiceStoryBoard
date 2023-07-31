@@ -160,14 +160,19 @@ def main():
             if os.path.exists('./voices/user_response.wav'):
                 logger.info(" LOG : User response recorded and exists ")
                 user_response_text = whisper_asr()
+                logger.info(" LOG : whisper ")
+
                 ai_response = generate_ai_response(user_response_text, openai_api_key)
+                logger.info(" LOG : gen ai response ")
+
                 response_audio_path = './voices/ai_response.wav'
                 response_audio = generate(voice = 'Bella', text = ai_response)
+                logger.info(" LOG : gen bella response ")
 
                 save(response_audio, response_audio_path)
                 logger.info("Saved response ai bella")
                 response_audio_file = open(response_audio_path, 'rb')
-                
+
                 logger.info("opened audio response of ai bella")
                 response_audio_bytes = response_audio_file.read()
 
