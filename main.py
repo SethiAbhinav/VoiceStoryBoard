@@ -157,7 +157,7 @@ def main():
             if os.path.exists('./voices/user_response.wav'):
                 user_response_text = whisper_asr()
                 ai_response = generate_ai_response(user_response_text, openai_api_key)
-                response_audio_path = 'voices/ai_response.wav'
+                response_audio_path = './voices/ai_response.wav'
                 response_audio = generate(voice = 'Bella', text = ai_response)
 
                 save(response_audio, response_audio_path)
