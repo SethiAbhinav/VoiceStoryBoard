@@ -10,3 +10,4 @@ whisper==1.1.10
 PyAudio==0.2.13
 # brew insatll mpv
 audio-recorder-streamlit==0.0.8
+mpv==1.0.4
