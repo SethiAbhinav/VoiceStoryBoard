@@ -1,0 +1,5 @@
+Wizard : Abracadabra
+Boy: Woohoo! That's awesome.
+Wizard : Would you like to know how I do this?
+Boy : Oh, yes please!
+Wizard : You wish, son. Run home now. Mu ha ha ha.
