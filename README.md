@@ -1,2 +1,4 @@
-# AI-Character-Mania
-Create voiceovers for children storybooks/play books
+# VoiceStoryBoard
+Create voiceovers for children (any, actually) story books.
+
+
