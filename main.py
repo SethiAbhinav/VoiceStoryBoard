@@ -17,7 +17,7 @@ load_dotenv()
 logger = get_logger(__name__)
 
 # Put your API key in a separate configuration file or environment variable
-set_api_key(os.getenv("ELEVEN_API_KEY"))
+# set_api_key(os.getenv("ELEVEN_API_KEY"))
 user_response_text = ''
 
 def set_bg_hack(main_bg):
@@ -69,7 +69,15 @@ def main():
     set_bg_hack('assets/Background1.png')
     st.sidebar.title("Configuration")
     openai_api_key = st.sidebar.text_input("OpenAI API Key (GPT4 access)", type = 'password')
-    if openai_api_key:
+    elevenlabs_api_key = st.sidebar.text_input("Eleven Labs API key", type = 'password')
+
+    if openai_api_key and elevenlabs_api_key:
+        try:
+            generate('hi', voice = 'Bella', api_key = elevenlabs_api_key)
+            set_api_key(elevenlabs_api_key)
+        except:
+            st.sidebar.error('Enter correct API key for Eleven Labs')
+        
         # Use the API key for subsequent operations
         openai.api_key = openai_api_key
         # Rest of your app code
@@ -110,7 +118,7 @@ def main():
             progress_bar.progress(35)
             
             # Generate and play voices
-            audio_files, character_voices = play_dialogues(story_metadata)
+            audio_files, character_voices = play_dialogues(story_metadata, elevenlabs_api_key)
             # st.write(audio_files)
             progress_bar.progress(60)
             st.title(st.session_state.story_title)
@@ -177,7 +185,7 @@ def main():
                 response_audio_bytes = response_audio_file.read()
 
                 logger.info("st expander before")
-                with st.expander('Closing Remarks'):
+                with st.expander('**Closing Remarks**'):
                     st.audio(response_audio_bytes, format='audio/wav')
                     st.write(ai_response)
                 
@@ -188,7 +196,7 @@ def main():
             logger.error(f'Error: {e}')
             pass
     else:
-        st.sidebar.warning("Please enter OpenAI API Key to continue (This app works only with GPT4 api key as of now).")
+        st.sidebar.warning("Please enter both the API keys to continue (This app works only with OpenAI API keys that have GPT4 access, as of now).")
     
 
     

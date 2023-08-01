@@ -5,8 +5,9 @@ import os
 import streamlit as st
 
 @st.cache_data(show_spinner=True)
-def play_dialogues(story_metadata):
-    character_voices = format_output(story_metadata)
+def play_dialogues(story_metadata, elevenlabs_api_key):
+    set_api_key(elevenlabs_api_key)
+    character_voices = format_output(story_metadata, elevenlabs_api_key)
     if len(story_metadata['Dialogues']) <= 1:
         try:
             dialogues = story_metadata['Dialogues'][0]

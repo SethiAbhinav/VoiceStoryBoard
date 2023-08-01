@@ -46,7 +46,9 @@ def extract_dialogues(script):
     return output
 
 # @st.cache_data()
-def format_output(story_metadata):
+def format_output(story_metadata, elevenlabs_api_key):
+    set_api_key(elevenlabs_api_key)
+
     # Prepare a dictionary to store the voice assignment for each character
     character_voices = {}
 
@@ -108,8 +110,8 @@ def get_user_voice_input():
         # text = r.recognize_google(audio_data)
         return audio_data
 
-def generate_ai_response(transcribed_input, key):
-    openai.api_key = key
+def generate_ai_response(transcribed_input, openai_api_key):
+    openai.api_key = openai_api_key
     assistant_message = {
         'role': 'assistant',
         'content': "What did you like about the story? What did you learn from it?"
